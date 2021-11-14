@@ -15,7 +15,7 @@ Download the prebuilt image and run the Docker container using:
 
 ```bash
 docker pull rangeli93/retrooz_dev:arm32
-docker run --privileged -it rangeli93/retrooz_dev:arm32 --name retrooz32 bash
+docker run --privileged -it --name retrooz32 rangeli93/retrooz_dev:arm32 bash
 ```
 
 For example to build Retrorun, execute the following within the Docker container:
@@ -38,7 +38,7 @@ Download the prebuilt image and run the Docker container using:
 
 ```bash
 docker pull rangeli93/retrooz_dev:arm64
-docker run --privileged -it rangeli93/retrooz_dev:arm64 --name retrooz64 bash
+docker run --privileged -it --name retrooz64 rangeli93/retrooz_dev:arm64 bash
 ```
 
 For example to build Retrorun, execute the following within the Docker container:
