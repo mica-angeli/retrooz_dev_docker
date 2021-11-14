@@ -62,6 +62,15 @@ RUN git clone https://github.com/mesonbuild/meson.git && \
     cd meson && \
     ln -s /meson/meson.py /usr/bin/meson
 
+# Install librga
+WORKDIR /root
+RUN git clone https://github.com/rockchip-linux/linux-rga.git && \
+    cd linux-rga && \
+    meson builddir && \
+    cd builddir && \
+    meson compile && \
+    meson install
+
 # Install libgo2
 WORKDIR /root
 RUN git clone https://github.com/OtherCrashOverride/libgo2.git && \
