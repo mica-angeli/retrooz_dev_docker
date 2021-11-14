@@ -75,8 +75,10 @@ RUN git clone https://github.com/rockchip-linux/linux-rga.git && \
 WORKDIR /root
 RUN git clone https://github.com/OtherCrashOverride/libgo2.git && \
     cd libgo2 && \
+    make && \
     mkdir -p /usr/include/go2 && \
-    cp src/*.h /usr/include/go2/
+    cp src/*.h /usr/include/go2/ && \
+    cp libgo2.so /usr/local/lib/
 
 # Get Rust
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
