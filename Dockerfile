@@ -1,4 +1,4 @@
-FROM arm32v7/ubuntu:20.04
+FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/New_York
