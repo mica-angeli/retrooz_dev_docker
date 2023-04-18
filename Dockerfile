@@ -64,8 +64,8 @@ RUN git clone https://github.com/mesonbuild/meson.git && \
 
 # Install librga
 WORKDIR /root
-RUN git clone https://github.com/rockchip-linux/linux-rga.git && \
-    cd linux-rga && \
+RUN git clone https://github.com/amarula/rockchip-linux-rga.git && \
+    cd rockchip-linux-rga && \
     meson builddir && \
     cd builddir && \
     meson compile && \
